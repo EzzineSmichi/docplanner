@@ -1,0 +1,471 @@
+
+
+
+html, body {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #747474;
+    font-size: 16px;
+    line-height: 1.3;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #00b39b;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+/* header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 10px;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: hsla(0,0%,100%,.98);
+    
+}
+
+
+
+header .logo img {
+    width: 268px;
+    height: 33px;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+
+header nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    font-weight: 400;
+    color: #ababab;
+    font-size: 15px;
+}
+
+
+header nav ul a:hover, .active {
+    color: #00b39b;
+}
+
+
+.dropdown {
+    position: relative;
+     
+}
+
+
+.dropdown-list {
+    position: absolute;
+    display: none;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    width: 220px;
+    margin-left: -100px;
+    z-index: 100;
+    background-color: #fff;
+}
+
+
+nav > ul .dropdown:hover .dropdown-list {
+    display: flex;
+    flex-flow: column nowrap;
+   
+} 
+
+
+.dropdown-list a:hover {
+    background-color: #f7f4f4;
+}
+
+
+
+/* main styles */
+
+
+h1 {
+    color: #00b39b;
+    font-size: 2rem;
+    margin: 1em 0;
+    font-weight: 300;
+    letter-spacing: .3px;
+}
+
+
+
+main section {
+    padding: 0 20px;
+}
+
+
+
+/* section one styles */
+
+
+main .section-one {
+    margin: 2rem auto 3.75rem;
+    text-align: center;
+}
+
+
+main .section-one p {
+    margin: .8em 0;
+    line-height: 1.75;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+main .section-one div:last-child {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+/* section two styles */
+
+
+main .section-two {
+    margin: 3.75rem auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+main .section-two div {
+    color: #fff;
+    
+}
+
+
+main .section-two .card {
+    padding: 1.375em 2.5em 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+main .section-two .card img {
+    width: 200px;
+    float: right;
+}
+
+
+main .section-two .card:first-child {
+    background-color: #00ccb1;
+}
+
+
+main .section-two .card:last-child {
+    background-color: #3d83df;
+}
+
+main .section-two h2 {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0;
+    color: hsla(0,0%,100%,.7);
+}
+
+
+main .section-two h3 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fff;
+    margin-top: .3em;
+
+}
+
+
+main .section-two select {
+    padding:  1em;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+main .section-two select:hover, main .section-two select:focus {
+    background-color: #f3f1ef;
+}
+
+
+
+
+/* section three styles */
+
+
+main .third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+main .third-section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+
+main .third-section ul a{
+    display: block;
+    font-weight: 700;
+    color: #ababab;
+    text-decoration: none;
+}
+
+
+
+/* section four styles */
+
+
+main .section-four div:first-child {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+main .section-four {
+    display: flex;
+    background-color: rgb(0, 238, 255);
+    padding: 1rem;
+}
+
+main .section-four >div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+main .section-four .card {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+
+
+/* section five styles */
+
+
+main .section-five article{
+    text-align: center;
+   
+}
+
+
+main .section-five a {
+    background-color: #fcfcfc;
+    color: #747474;
+    text-decoration: none;
+    display: block;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+main .section-five a:hover {
+    box-shadow:  0 20px 50px 0 rgba(0,0,0,.13);
+}
+
+main .section-five aside div figure{
+    padding: 0;
+    margin: 0;
+}
+
+
+main .section-five aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+
+main .section-five img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+main .section-five aside  div div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+main .section-five aside div div:after{
+    overflow: hidden;
+}
+
+
+main .section-five button {
+    background-color: #3d83df;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: .7em;
+    cursor: pointer;
+}
+
+
+main .section-five button:hover {
+    background-color: #1662c6;
+    color: #fff;
+}
+
+
+hr {
+    width: 100%;
+    margin: 3rem 0 1rem;
+    padding: 0;
+    font-size: .1rem;
+    opacity: .2;
+}
+
+
+
+
+
+/* footer styles */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: .75em;   
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+
+/* breackpoint: screen < 500px */
+
+@media screen and (max-width:500px){
+
+    
+    main .section-one div:last-child {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* breakpoint: screen < 600px  */
+
+@media screen and (max-width:600px) {
+    main .section-four >div:nth-child(2) {
+        grid-template-columns: auto;
+    }
+}
+
+
+/* breakpoint: screen < 640px  */
+@media screen and (max-width:640px){
+    main .section-two {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: auto;
+    }
+}
+
+
+
+
+/* breakpoint: screen < 700px  */
+
+
+@media screen and (max-width:700px) {
+    main .third-section {
+        flex-direction: column;  
+        align-items: start;
+    }
+
+
+    main .third-section ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+
+
+/* breakpoint: screen < 800px  */
+
+@media screen and (max-width:800px) {
+    main .third-section ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/* breakpoint: screen < 850px  */
+
+@media screen and (max-width:850px) {
+    main .section-four {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+/* breakpoint: screen < 870px  */
+
+@media screen and (max-width:870px) {
+
+    
+    main .section-five aside {
+        display: flex;
+        gap: 1rem;
+        margin-left: 5rem;
+        overflow: hidden;
+    }
+
+    
+
+    
+    
+}
